@@ -4,7 +4,7 @@
 ## How to use
 > [!NOTE]
 > YOU NEED A COMPUTER AND DEVELOPER OPTIONS ENABLED FOR THIS TO WORK. DEVELOPER OPTIONS CAN BE ENABLED ON THE PARENT APP.
-1. Download the appropriate release for your CPU architecture from the [releases](https://github.com/rifting/chronolink/releases/tag/v0.1.0) (it likely isn't x86_64).
+1. Download the appropriate release for your CPU architecture from the [releases](https://github.com/rifting/chronolink/releases/tag/v0.1.0) (it likely IS aarch64).
 2. Ensure you have adb installed on your machine
 3. Connect your phone via USB
 4. `adb push chronolink /data/local/tmp`
