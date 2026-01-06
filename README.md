@@ -1,9 +1,7 @@
-# ARCHIVED
-Please use the `adb shell service call alarm 3 s16 UTC+6` (replacing the + in UTC with the appropriate timezone instead)
-This was just a way for me to learn about Android IPC and have fun in the process. It was always a bit buggy in practice unfortunately.
-
 # chronolink
 ### A tool for bypassing time-based features of Family Link parental controls
+Notice: Please use the `adb shell service call alarm 3 s16 UTC+6` (replacing the + in UTC with the appropriate timezone instead)
+This was just a way for me to learn about Android IPC and have fun in the process. It was always a bit buggy in practice unfortunately.
 
 ## How to use
 > [!NOTE]
