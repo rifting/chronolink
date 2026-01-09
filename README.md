@@ -1,25 +1,27 @@
 # chronolink
 ### A tool for bypassing time-based features of Family Link parental controls
-Notice: Please use the `adb shell service call alarm 3 s16 UTC+6` (replacing the + in UTC with the appropriate timezone instead)
-This was just a way for me to learn about Android IPC and have fun in the process. It was always a bit buggy in practice unfortunately.
 
 ## How to use
 > [!NOTE]
 > YOU NEED A COMPUTER AND DEVELOPER OPTIONS ENABLED FOR THIS TO WORK. DEVELOPER OPTIONS CAN BE ENABLED ON THE PARENT APP.
-1. Download the appropriate release for your CPU architecture from the [releases](https://github.com/rifting/chronolink/releases/tag/v0.1.0) (it likely IS aarch64).
+1. Download the appropriate release for your CPU architecture from the [releases](https://github.com/rifting/chronolink/releases/tag/v2.0.0) (The one you need is probably chronolink-aarch64).
 2. Ensure you have adb installed on your machine
 3. Connect your phone via USB
 4. `adb push chronolink /data/local/tmp`
 5. `adb shell chmod +x /data/local/tmp/chronolink`
-6. `adb shell /data/local/tmp/chronolink`
-7. Scroll the options with the J & K keys, and hit enter on your chosen time.
-8. Enjoy bypassing downtime!
+6. List time zones with `adb shell /data/local/tmp/chronolink list`
+7. Once you've chosen a time zone, you can set device time to it as so:
+   `adb shell /data/local/tmp/chronolink America/New_York`
+   
+   Replace New_York with the time zone you choose from the list. 
+9. Enjoy bypassing downtime!
 
 ## FAQ
-### Will this work with developer options off / through a terminal emulator?
+### Will this work with developer options off?
 No. 
+
 ### Why do you have a file with every single time zone on Android? Is that not bloat?
-It DEFINITELY is. I just didn't have the time to sort through all the unique time zones (since some have 30 and 15 minute offsets). If somebody would like to PR it to remove the non duplicate timezones I would gladly merge. This is just a real quick lazy implementation.
+Planning on removing it later lol
 
 ## How do I compile?
 Compiled on Ubuntu 24.04.1 LTS. This will assume you are using a debian-based distro, but this should work on most major distributions. The binder_rust crate relies on on the nix crate which is not supported on Windows right now.
