@@ -1,4 +1,5 @@
-# chronolink
+<img width="640" height="114" alt="image" src="https://github.com/user-attachments/assets/fb633986-4808-481e-8065-a561462bc0e5" />
+
 ### A tool for bypassing time-based features of Family Link parental controls
 
 ## How to use
