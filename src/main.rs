@@ -23,11 +23,11 @@ enum Commands {
 }
 
 fn main() {
-    let cli = Cli::parse();
-
     for line in get_logo() {
         println!("\x1b[93m{}\x1b[0m", line);
     }
+
+    let cli = Cli::parse();
 
     match cli.command {
         Some(Commands::List) => list_timezones(),
