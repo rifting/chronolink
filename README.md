@@ -12,6 +12,7 @@
 5. `adb shell chmod +x /data/local/tmp/chronolink`
 6. List time zones with `adb shell /data/local/tmp/chronolink list`
 7. Once you've chosen a time zone, you can set device time to it as so:
+
    `adb shell /data/local/tmp/chronolink America/New_York`
    
    Replace New_York with the time zone you choose from the list. 
