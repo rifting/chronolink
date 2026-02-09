@@ -15,7 +15,7 @@
 
    `adb shell /data/local/tmp/chronolink America/New_York`
    
-   Replace New_York with the time zone you choose from the list. 
+   Replace America/New_York with the time zone you choose from the list. 
 9. Enjoy bypassing downtime!
 
 ## FAQ
